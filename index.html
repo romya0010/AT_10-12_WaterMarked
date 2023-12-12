@@ -53,7 +53,7 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     
-        document.addEventListener('wheel', onScroll, false);
+        document.addEventListener('wheel', onScroll, true);
         document.addEventListener('mousemove', onMouse, false);
         var content = document.getElementsByClassName('webgl-content');
         function onMouse() { content[0].style['pointer-events'] = 'auto'; }
